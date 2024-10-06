@@ -3,6 +3,8 @@
 :root {
   --border-color: #144fc6;
   --fill-color: #6ab3f8;
+  --button-color: #ff6b6b;
+  --button-hover: #ff4757;
 }
 
 * {
@@ -101,4 +103,55 @@ h3 {
 .text {
   text-align: center;
   margin: 0 0 5px;
+}
+
+/* Timer Styles */
+.timer-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.timer-container h2 {
+  margin-bottom: 10px;
+}
+
+#timer {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.timer-container button {
+  background-color: var(--fill-color);
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.timer-container button:hover {
+  background-color: var(--border-color);
+}
+
+/* Restart Button Styles */
+#restart {
+  background-color: var(--button-color);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#restart:hover {
+  background-color: var(--button-hover);
 }
